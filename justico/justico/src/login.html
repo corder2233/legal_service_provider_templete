@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <!-- navber start here -->
+    <nav class="flex w-full h-12 items-center mt-2  px-4 justify-between my-4 sm:px-10">
+        <p class="font-semibold text-green-700 font-Inclusive text-3xl">Jobportal</p>
+        <div class="flex px-6 mt-3">
+            <p class="md:mx-12 mx-6 text-xl items-end text-green-70 hover:cursor-pointer hover:text-green-700">login</p>
+            <br>
+            <button class="bg-green-700 p-2 px-3 text-white text-sm font-semibold rounded-md mx-2 hover:drop-shadow-lg shadow-black hover:cursor-pointer sm:font-normal sm:p-2 sm:px-4 sm:text-lg">Sign Up</button>
+        </div>
+    </nav>
+    <div class="text-center py-5 px-full bg-slate-600">
+        <p class="text-xl font-bold text-ellipsis text-slate-100">Login</p>
+    </div>
+    <div class="w-full flex mt-16 justify-center">
+        <form class="border-gray-300 p-10 rounded-lg w-auto " action="process_login.php" method="post">
+            <div class="flex flex-col p-8 border-2 border-gray-300 rounded-2xl bg-slate-200">
+                <label class="font-semibold text-xl" for="email">Email:</label>
+                <input  class="sm:w-96 sm:h-8  w-72 h-10 p-4 border-2 border-gray-400 rounded-md"  type="email" id="email" name="email" required><br><br>
+                <label class="font-semibold text-xl" for="password">Password:</label>
+                <input class="sm:w-96 sm:h-8  w-72 h-10 p-4 border-2 border-gray-300 rounded-md" type="password" id="password" name="password" required><br><br>
+
+                <input class="w-96 h-10 text-lg font-semibold text-white bg-black rounded-md text-center" type="submit" value="Login">
+                <p class="text-sm text-center p-4">Forgot Password</p>
+                <p class="text-lg text-center ">Signup</p>
+            </div>
+
+            
+    
+            
+    
+            
+        </form>
+    </div>
+
+    <footer class="w-full pb-14 bg-slate-600 text-center font-semibold text-slate-200 ">
+        <p class="p-4 text-slate-200 text-sm">© Department of Law & Ministry</p>
+    </footer>
+</body>
+</html>
